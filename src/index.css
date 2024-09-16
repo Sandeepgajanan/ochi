@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "ff";
+  src: url("./assets/FoundersGrotesk-Semibold.ttf");
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #004d43;
+  border-radius: 10px;
+}
