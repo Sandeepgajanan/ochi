@@ -6,7 +6,7 @@ const Navbar = () => {
 
   return (
     <div className="w-full fixed z-[999]">
-      <div className="max-w-screen-xl mx-auto py-3 px-2 flex items-center font-['NeueMontreal_Regular']">
+      <div className="max-w-screen-xl mx-auto py-3 px-2 flex items-center font-['nn']">
         <div className="n-left w-1/2">
           <svg
             width="72"

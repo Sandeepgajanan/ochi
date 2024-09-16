@@ -1,6 +1,7 @@
 import React from "react";
 import Herobutton from "./Herobutton";
 import Border from "./Border";
+import ochi from "../assets/ochi.jpg";
 import { motion } from "framer-motion";
 
 const Hero = () => {
@@ -31,7 +32,7 @@ const Hero = () => {
                       className="w-[9vw] h-[5.7vw] rounded-md mt-4 overflow-hidden"
                     >
                       <img
-                        src="https://ochi.design/wp-content/uploads/2022/04/content-image01.jpg"
+                        src={ochi}
                         className="w-full h-full object-cover"
                         alt=""
                         key={index}

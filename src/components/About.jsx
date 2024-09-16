@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import React, { useState } from "react";
 import Border from "./Border";
 import Button from "./Button";
+import founders from "../assets/founders.jpg";
 
 const About = () => {
   const [val, setVal] = useState(false);
@@ -80,7 +81,7 @@ const About = () => {
           }}
         >
           <img
-            src="https://ochi.design/wp-content/uploads/2022/05/Homepage-Photo-663x469.jpg"
+            src={founders}
             className="w-full h-full rounded-md object-cover"
             alt=""
           />

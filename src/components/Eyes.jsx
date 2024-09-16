@@ -1,5 +1,5 @@
 import Eye from "./Eye";
-
+import bg from "../assets/Eye.jpg";
 const Eyes = () => {
   return (
     <div className="eyes w-full h-screen overflow-hidden flex justify-center">
@@ -7,7 +7,8 @@ const Eyes = () => {
         data-scroll
         data-scroll-section
         data-scroll-speed="-.6"
-        className="relative w-2/3  h-full bg-cover bg-center bg-[url('https://ochi.design/wp-content/uploads/2022/05/Top-Viewbbcbv-1-scaled.jpg')]"
+        className="relative w-2/3 h-full bg-cover bg-center"
+        style={{ backgroundImage: `url(${bg})` }}
       >
         <div className=" absolute flex gap-10 top-[40%] left-1/2 -translate-x-[50%] -translate-y-[50%]">
           <Eye title={"Play"} />

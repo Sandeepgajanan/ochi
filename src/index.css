@@ -6,6 +6,10 @@
   font-family: "ff";
   src: url("./assets/FoundersGrotesk-Semibold.ttf");
 }
+@font-face {
+  font-family: "nn";
+  src: url("./assets/NeueMontreal-Regular.ttf");
+}
 ::-webkit-scrollbar {
   width: 10px;
 }
