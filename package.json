@@ -1,16 +1,13 @@
 {
   "name": "ochi",
   "private": true,
-  "homepage": "https://Sandeepgajanan.github.io/ochi/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "preview": "vite preview"
   },
   "dependencies": {
     "framer-motion": "^11.5.4",
