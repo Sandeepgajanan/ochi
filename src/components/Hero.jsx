@@ -11,6 +11,7 @@ const Hero = () => {
     "For public and private companies",
     "From the first pitch to IPO",
   ];
+  const isSmallScreen = window.innerWidth <= 480;
   return (
     <div
       data-scroll
@@ -18,7 +19,7 @@ const Hero = () => {
       data-scroll-speed="-.20"
       className="w-full overflow-x-hidden"
     >
-      <div className="max-w-screen-xl px-2 mx-auto mt-36  font-[ff] mb-24 ">
+      <div className="max-w-screen-xl px-2 mx-auto mt-36  font-[ff] mb-24  max-sm:mt-16">
         <div className="flex justify-between items-center">
           <div className="text-content">
             {masker.map((item, index) => {
@@ -27,9 +28,9 @@ const Hero = () => {
                   {index === 1 && (
                     <motion.div
                       initial={{ width: 0 }}
-                      animate={{ width: "9vw" }}
+                      animate={{ width: isSmallScreen ? "15vw" : "9vw" }}
                       transition={{ duration: 1, ease: [0.45, 0, 0.55, 1] }}
-                      className="w-[9vw] h-[5.7vw] rounded-md mt-4 overflow-hidden"
+                      className="w-[9vw] h-[5.7vw] rounded-md mt-4 overflow-hidden max-sm:h-[12.5vw] max-sm:mt-1"
                     >
                       <img
                         src={ochi}
@@ -40,7 +41,7 @@ const Hero = () => {
                     </motion.div>
                   )}
                   <h1
-                    className="uppercase text-[9.2vw]  tracking-[-0.05vw] leading-[7vw] opacity-85"
+                    className="uppercase text-[9.2vw]  tracking-[-0.05vw] leading-[7vw] opacity-85 max-sm:text-[19vw] max-sm:leading-[17vw] "
                     key={index}
                   >
                     {item}
@@ -49,7 +50,7 @@ const Hero = () => {
               );
             })}
           </div>
-          <div className="-mr-[4.2%] -mt-[10%] ">
+          <div className="-mr-[4.2%] -mt-[10%] max-sm:hidden">
             <svg width="53.08" height="171.358">
               <path
                 className="js-color-bg"
@@ -65,9 +66,12 @@ const Hero = () => {
       </div>
       <Border />
       <div className="font-['NeueMontreal_Regular']">
-        <div className="max-w-screen-xl px-2 mx-auto flex justify-between items-center mt-4">
+        <div className="max-w-screen-xl px-2 mx-auto flex justify-between items-center mt-4 max-sm:whitespace-nowrap max-sm:flex-col max-sm:px-1">
           {info.map((item, index) => (
-            <h2 key={index} className="text-lg  font-light opacity-85">
+            <h2
+              key={index}
+              className="text-lg  font-light opacity-85 max-sm:text-lg max-sm:mt-1 max-sm:opacity-75"
+            >
               {item}
             </h2>
           ))}

@@ -9,7 +9,7 @@ const Marquee = () => {
       data-scroll
       data-scroll-section
       data-scroll-speed=".05"
-      className="w-full pt-20 pb-8 bg-[#004D43] mt-10 rounded-tl-2xl rounded-tr-2xl"
+      className="w-full pt-20 pb-8 bg-[#004D43] mt-10 rounded-tl-2xl rounded-tr-2xl max-sm:pt-10 max-sm:pb-10 max-sm:mt-24 "
     >
       <Border />
       <div className=" flex whitespace-nowrap overflow-hidden">

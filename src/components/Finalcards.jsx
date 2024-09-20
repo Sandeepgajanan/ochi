@@ -24,13 +24,13 @@ const Finalcards = () => {
     },
   ];
   return (
-    <div className="w-full h-screen overflow-hidden py-20">
+    <div className="w-full h-screen overflow-hidden py-20 max-sm:hidden">
       {" "}
       <div
         data-scroll
         data-scroll-section
         data-scroll-speed="-.6"
-        className="max-w-screen-xl px-2 mx-auto py-14  flex gap-3 flex-nowrap"
+        className="max-w-screen-xl px-2 mx-auto py-14  flex gap-3 flex-nowrap max-sm:flex-col max-sm:flex-wrap"
       >
         {data.map((item, index) => (
           <Finalcard val={item} key={index} inn={index} />

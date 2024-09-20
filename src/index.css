@@ -4,12 +4,16 @@
 
 @font-face {
   font-family: "ff";
-  src: url("./assets/FoundersGrotesk-Semibold.ttf");
+  src: url("/FoundersGrotesk-Semibold.ttf");
+  font-display: swap;
 }
+
 @font-face {
   font-family: "nn";
-  src: url("./assets/NeueMontreal-Regular.ttf");
+  src: url("/NeueMontreal-Regular.ttf");
+  font-display: swap;
 }
+
 ::-webkit-scrollbar {
   width: 10px;
 }

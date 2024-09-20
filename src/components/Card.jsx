@@ -22,7 +22,7 @@ const Card = ({ value, inn }) => {
 
   return (
     <>
-      <div className="font-[NeueMontreal] px-2 max-w-screen-xl mx-auto py-10 w-1/2 flex-shrink-0">
+      <div className="font-[NeueMontreal] px-2 max-w-screen-xl mx-auto py-10 w-1/2 flex-shrink-0 max-sm:w-full ">
         <div className="px-2 flex gap-3 items-center mb-3">
           <div className="w-3 h-3 bg-zinc-900 rounded-full"></div>
           <h2 className="font-medium text-md opacity-85 uppercase">
@@ -33,13 +33,13 @@ const Card = ({ value, inn }) => {
         <motion.div
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
-          className="w-full h-[90vh] rounded-2xl p-2 relative"
+          className="w-full h-[90vh] rounded-2xl p-2 relative max-sm:h-1/2"
           style={{
             padding: isHovered ? "15px" : "", // smoother padding transition
             transition: "padding 0.4s ease", // adds smooth transition for padding
           }}
         >
-          <motion.div className="w-full h-full overflow-hidden rounded-2xl">
+          <motion.div className="w-full h-full overflow-hidden rounded-2xl ">
             <img
               className="w-full h-full object-cover rounded-2xl"
               src={value.img}
@@ -47,7 +47,7 @@ const Card = ({ value, inn }) => {
             />
           </motion.div>
 
-          <div className="absolute w-full h-full top-0 left-0  ">
+          <div className="absolute w-full h-full top-0 left-0  max-sm:hidden ">
             <motion.div
               className={`absolute top-1/2 ${
                 (inn + 2) % 2 === 0 ? "left-full" : "left-0"
@@ -72,13 +72,15 @@ const Card = ({ value, inn }) => {
           </div>
         </motion.div>
 
-        <div className="flex gap-2 mt-5">
+        <div className="flex gap-2 mt-5 max-sm:mt-0 max-sm:whitespace-nowrap max-sm:flex-wrap ">
           {value.btncontent.map((content, index) => (
             <div
               key={index}
-              className="px-2 py-1 rounded-full border-[1px] border-zinc-500 tracking-tight"
+              className="px-2 py-1 rounded-full border-[1px] border-zinc-500 tracking-tight "
             >
-              <h2 className="text-md opacity-75 uppercase">{content}</h2>
+              <h2 className="text-lg opacity-75 uppercase max-sm:text-xs">
+                {content}
+              </h2>
             </div>
           ))}
         </div>

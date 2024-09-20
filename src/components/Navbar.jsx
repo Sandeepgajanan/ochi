@@ -5,7 +5,7 @@ const Navbar = () => {
   const Links = ["Services", "Our work", "About us", "Insights", "Contact us"];
 
   return (
-    <div className="w-full fixed z-[999]">
+    <div className="w-full ">
       <div className="max-w-screen-xl mx-auto py-3 px-2 flex items-center font-['nn']">
         <div className="n-left w-1/2">
           <svg
@@ -38,7 +38,7 @@ const Navbar = () => {
           </svg>
         </div>
 
-        <div className="links flex items-center">
+        <div className="links flex items-center max-sm:hidden">
           {Links.map((item, index) => (
             <motion.a
               className={`flex text-lg  font-light opacity-85  h-6 w-[7.5vw] overflow-hidden relative ${
